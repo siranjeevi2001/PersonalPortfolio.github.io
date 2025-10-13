@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Siranjeevi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Siranjeevi</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="projects">
+            <h2>GitHub Projects</h2>
+            <div class="github-input">
+                <input type="text" id="githubUser" placeholder="Enter GitHub username" />
+                <button id="fetchBtn" class="btn">Fetch Repos</button>
+            </div>
+            <div id="repo-list" class="repo-container">Loading default projects...</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Siranjeevi | GitHub Projects Fetched via API</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        // Default load for siranjeevi2001
+        fetchGitHubRepos('siranjeevi2001');
+
+        // Fetch repos for user input
+        document.addEventListener("DOMContentLoaded", () => {
+            const fetchBtn = document.getElementById("fetchBtn");
+            fetchBtn.addEventListener("click", () => {
+                const username = document.getElementById("githubUser").value.trim();
+                if (username) fetchGitHubRepos(username);
+            });
+        });
+    </script>
+</body>
+
+</html>
