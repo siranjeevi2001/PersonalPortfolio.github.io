@@ -1,0 +1,81 @@
+/* ----------- Hero Section ----------- */
+.hero {
+  text-align: center;
+  padding: 100px 20px 70px;
+  background: #f6f6f6;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #007bff;
+}
+
+.hero-sub {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* ----------- About Section ----------- */
+.about {
+  max-width: 900px;
+  margin: 40px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.about p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* ----------- Skills Section ----------- */
+.skills {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.skill-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* ----------- CTA Section ----------- */
+.cta {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #007bff;
+  color: #007bff;
+  border-radius: 6px;
+  text-decoration: none;
+}

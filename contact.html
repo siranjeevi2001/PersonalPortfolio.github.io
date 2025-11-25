@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="components/navbar.html">
+  <link rel="stylesheet" href="css/nav.css">  
+  <script src="js/nav.js" defer></script>
+</head>
+<body>
+
+<div id="navbar"></div>
+
+  <main>
+    <h1>Contact Me</h1>
+
+    <form id="contactForm">
+      <div class="form-control">
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+        <small class="error hidden"></small>
+      </div>
+
+      <div class="form-control">
+        <label for="email">Email</label>
+        <input type="email" id="email" />
+        <small class="error hidden"></small>
+      </div>
+
+      <div class="form-control">
+        <label for="message">Message</label>
+        <textarea id="message"></textarea>
+        <small class="error hidden"></small>
+      </div>
+
+      <button id="submitBtn" type="submit" disabled>Send Message</button>
+      <p id="successMsg" class="hidden"></p>
+    </form>
+  </main>
+
+    <!-- page content -->
+
+    <div id="footer-container"></div>
+    <script src="js/footer.js"></script>
+    <script src="js/contact.js"></script>
+
+</body>
+</html>
